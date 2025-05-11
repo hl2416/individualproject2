@@ -1,0 +1,364 @@
+/* changes the font, font size, background color, and aligns it to the center while removing the margin at the sides of the page */
+body
+{
+  background-color: #5E99C5;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* affects the "page" of the html files which can be seen as the white area on the site while creating a margin for both sides and making sure the words dont exit their containers */
+.page
+{
+  background-color: White;
+  margin: 0 auto;
+  margin-left: 17%;
+  margin-right: 17%;
+  word-wrap: break-word;
+}
+
+/* changes padding, font size, and color of the title of the page which is the big words right under the nav bar */
+.title
+{
+  margin: 0;
+  padding: 20px;
+  color: Black;
+  font-size: 36px;
+}
+
+/* affects the text of the page by overriding the body's center alignment and adds padding */
+.text
+{
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+/* adds some padding to make it look better for the others pages */
+.ref1
+{
+  padding-bottom: 30px;
+}
+
+.ref2
+{
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+
+/* padding for footer to make it look better */
+footer
+{
+  padding-bottom: 30px;
+}
+
+/* changes the background color to black for the nav bar */
+nav
+{
+  background-color: black;
+}
+
+/* so that theres no underline */
+nav a
+{
+  text-decoration: none;
+}
+
+nav .menu .menuContent a
+{
+  text-decoration: none;
+}
+
+/* displays the logo inline with rest of the menu options and adds some margin to center it a bit more */
+.logo
+{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+  margin-right: 3%;
+}
+
+/* changes the size of the logo */
+.lSize
+{
+  width: 100px;
+  height: 43.6px;
+}
+
+/* affects the home option on the nav bar to make it look better */
+.home
+{
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  padding: 17px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+/* changes color of home when hovered over on the nav bar */
+.home:hover
+{
+  color: black;
+  background-color: white;
+}
+
+/* displays the dropdown options inline with the nav bar options on the nav bar */
+.menu
+{
+  display: inline-block;
+}
+
+/* edits the button to have the same style as the rest of the site */
+button
+{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  padding: 16px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border: none;
+}
+
+/* hides the dropdown options if not hovered on the corresponding nav bar option and keeps it below */
+.menuContent
+{
+  display: none;
+  position: absolute;
+  background-color: black;
+}
+
+/* displays the dropdown options on new line with the whole width */
+.menuContent a
+{
+  display: block;
+  color: white;
+  padding: 16px 50px;
+  text-decoration: none;
+}
+
+/* changes color of dropdown options when hovered over */
+.menuContent a:hover
+{
+  color: black;
+  background-color: #5E99C5;
+}
+
+/* displays the dropdown menu when the corresponding nav bar option is hovered over */
+.menu:hover .menuContent
+{
+  display: block;
+}
+
+/* changes the color of the button when the nav bar option is hovered over to match the rest of the site */
+.menu:hover button
+{
+  color: black;
+  background-color: white;
+}
+
+/* adds a background to the img and caption for easier differentiation */
+figure
+{
+  background-color: #5E99C5;
+  padding: 15px;
+}
+
+/* changes the font size and font of the image captions */
+figcaption
+{
+  font-size: 14px;
+  font-family: 'Montserrat';
+}
+
+/* affects only the map on the home page */
+.NYCMap
+{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+/* affects all images besides the map on the home page */
+.img
+{
+  float: right;
+  width: 45%;
+}
+
+/* affects the footer */
+.footer
+{
+  font-size: 12px;
+  text-align: center;
+}
+
+/* active for bedcrumbs that change the background-color */
+nav a#active
+{
+  background-color: #5E99C5;
+}
+
+nav div button.active
+{
+  background-color: #5E99C5;
+}
+
+nav div a button#a
+{
+  background-color: #5E99C5;
+}
+
+nav div div a.active
+{
+  background-color: #5E99C5;
+}
+
+.mobile
+{
+  display: none;
+}
+
+/* some styling for the comments */
+.cm
+{
+  text-align: left;
+  list-style: none;
+  border: 2px solid black;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/* some form styling */
+#name
+{
+  margin-bottom: 15px;
+  width: 84%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+}
+
+.submit
+{
+  padding: 8px 20px 8px 20px;
+  color: white;
+  background-color: black;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.submit:hover
+{
+  color: black;
+  background-color: #5E99C5;
+}
+
+#comment
+{
+  width: 90%;
+  height: 150px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+}
+
+/* style for mobile version such as the hamburger menu and to make it less cramped */
+@media screen and (max-width: 1180px)
+{
+  .page
+  {
+    margin: 0;
+  }
+
+  .img
+  {
+    float: none;
+    width: 90%;
+  }
+
+  figure
+  {
+    margin: auto;
+  }
+
+  .NYCMap
+  {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  nav
+  {
+    width: 100%;
+    height: 52.8px;
+  }
+
+  .logo
+  {
+    float: left;
+    margin-left: 20px;
+    margin-right: 0;
+  }
+
+  .home
+  {
+    padding-left: 0;
+    padding-right: 0;
+    display: none;
+    flex-flow: column;
+    position: absolute;
+    width: 100%;
+    top: 52.8px;
+  }
+
+  .menu
+  {
+    display: none;
+    flex-flow: column;
+    position: relative;
+    width: 100%;
+    top: 52.8px;
+  }
+
+  .menuContent
+  {
+    top: 52.8px;
+    width: 100%;
+  }
+
+  .menu:hover
+  {
+    margin-bottom: 211.2px;
+  }
+
+  #op3:hover
+  {
+    margin-bottom: 105.6px;
+  }
+
+  .mobile
+  {
+    height: 52.8px;
+    width: 52.8px;
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 0;
+  }
+
+  .mobile:hover
+  {
+    background-color: #618EC1;
+  }
+
+  .comments
+  {
+    width: 100%;
+  }
+}
